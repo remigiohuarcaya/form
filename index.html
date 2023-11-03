@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Alumno | form</title>
+
+    <style>
+        table{
+            margin: auto
+        }
+        body{
+            font-size: 18px;
+        }
+    </style>
+
+</head>
+<body>
+    <h2 style="text-align: center;">REGISTRO DE ALUMNO</h2>
+    <form action="">
+        <table>
+            <tr>
+                <td>Código</td>
+                <td>
+                    <input type="text" value="C001" readonly name="txtCod" id="idCod" >
+                </td>
+            </tr>
+            <tr>
+                <td>Nombres</td>
+                <td>
+                    <input type="text" name="txtNom" id="idNom" maxlength="25" minlength="3" >
+                </td>
+            </tr>
+            <tr>
+                <td>Apellidos</td>
+                <td>
+                    <input type="text" name="txtApe" id="idApe"  placeholder="Escribe en mayúscula" >
+                </td>
+            </tr>
+            <tr>
+                <td>Fecha Nac</td>
+                <td>
+                    <input type="date" name="fecNac" id="idFec">
+                </td>
+            </tr>
+            <tr>
+                <td>DNI</td>
+                <td>
+                    <input type="text" name="txtDni" id="idDni" maxlength="8" minlength="8" >
+                </td>
+            </tr>
+
+            <tr>
+                <td>Sexo</td>
+                <td>
+                    <label for="">
+                        <input type="radio" name="rbSexo" id="idSexo">
+                        Masculino
+                    </label>
+                    <label for="">
+                        <input type="radio" name="rbSexo" id="idSexo">
+                        Femenino
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Distrito</td>
+                <td>
+                    <select name="txtDis" id="idDis">
+                        <option value="1">Cercado de Lima</option>
+                        <option value="2">SJL</option>
+                        <option value="3">SJM</option>
+                        <option value="4">Ate</option>
+                        <option value="5">VMT</option>
+                        <option value="4">VES</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Email</td>
+                <td> 
+                    <input type="email" name="txtCorreo" id="idCorreo">
+                </td>
+            </tr>
+            <tr>
+                <td>Contraseña</td>
+                <td>
+                    <input type="password" name="txtCon" id="idCon">
+                </td>
+            </tr>
+            <tr>
+                <td>Foto</td>
+                <td>
+                    <input type="file" name="txtFoto" id="idFoto">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Observación</td>
+                <td>
+                    <textarea name="txtObs" id="idObs" cols="60" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="Grabar">
+                </td>
+                <td>
+                    <input type="button" value="Cancelar">
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+</body>
+</html>
